@@ -117,3 +117,81 @@ The repository includes:
 ## Next Recommended Step
 
 Replace the `mailto:` contact flow with a real form backend or service if you need reliable inquiry delivery and tracking.
+
+## Resume Notes
+
+Use this section to continue development in the next session without re-discovering the current state.
+
+### Current Status
+
+- Public site pages are implemented:
+  - home
+  - services
+  - about
+  - contact
+  - privacy
+  - terms
+- Root deployment files are in place:
+  - `index.html`
+  - `404.html`
+  - `robots.txt`
+  - `sitemap.xml`
+  - `site.webmanifest`
+- Content images were localized into `assets/images/*.webp`
+- External image hotlinks were removed from public pages
+- Image performance attributes were added:
+  - LCP image uses `fetchpriority="high"`
+  - non-critical images use `loading="lazy"` and `decoding="async"`
+- Validation script now checks:
+  - required files
+  - broken links
+  - configured domain references
+  - missing image files
+  - external image hotlinks
+  - missing `alt` text
+- Local QA completed:
+  - static server response check
+  - desktop/mobile screenshot check
+  - Lighthouse check on home and contact pages
+
+### Latest QA Result
+
+- Home page Lighthouse:
+  - Performance `99`
+  - Accessibility `100`
+  - Best Practices `100`
+  - SEO `100`
+- Contact page Lighthouse:
+  - Performance `100`
+  - Accessibility `100`
+  - Best Practices `100`
+  - SEO `100`
+
+### Important Current Constraints
+
+- Real production domain is not available yet
+- `site.config.json` still uses the placeholder domain
+- Contact form still uses `mailto:` fallback
+- PHP is not required for the current implementation
+
+### First Tasks To Resume With
+
+1. Replace the placeholder `domain` in `site.config.json` when the real domain is ready
+2. Run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\prepare-deploy.ps1
+```
+
+3. Replace the contact form `mailto:` flow with a real form backend or service
+4. If deploying on Cloudflare, prefer `Pages` first unless backend logic grows significantly
+
+### Useful Files For The Next Session
+
+- `README.md`
+- `docs/WORKLOG.md`
+- `site.config.json`
+- `apply-site-config.ps1`
+- `validate-site.ps1`
+- `prepare-deploy.ps1`
+- `DEPLOYMENT_CHECKLIST.md`
