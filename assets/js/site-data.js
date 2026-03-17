@@ -1,0 +1,8 @@
+window.SALON_PUBLIC_SITE = {
+  brandName: 'Salon Public',
+  supportEmail: 'smh085@naver.com',
+  supportPhone: '010-5382-0336',
+  supportPhoneHref: '+821053820336',
+  supportHours: 'Monday to Friday, 10:00 AM to 6:00 PM KST',
+  supportCoverage: 'Salon marketplace and public website builds in Korea and remote projects.'
+};

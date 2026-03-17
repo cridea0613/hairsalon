@@ -1,0 +1,16 @@
+{
+  "name": "Salon Public",
+  "short_name": "Salon Public",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f7",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "../assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

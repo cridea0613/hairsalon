@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Salon Public cover">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7fbfa" />
+      <stop offset="100%" stop-color="#e6f1ef" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#115e59" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1010" cy="110" r="180" fill="#dceeea" />
+  <circle cx="170" cy="520" r="140" fill="#f5e2d6" />
+  <rect x="84" y="84" width="140" height="140" rx="38" fill="url(#accent)" />
+  <text x="154" y="173" text-anchor="middle" font-size="68" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#ffffff">SP</text>
+  <text x="84" y="330" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#172026">Salon Public</text>
+  <text x="84" y="396" font-size="30" font-family="Inter, Arial, sans-serif" fill="#52606d">Trusted salon discovery with fast public pages, clear service structure, and booking-ready contact flows.</text>
+  <rect x="84" y="450" width="276" height="72" rx="36" fill="#115e59" />
+  <text x="222" y="495" text-anchor="middle" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#ffffff">Public Website System</text>
+</svg>

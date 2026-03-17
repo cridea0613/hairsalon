@@ -1,0 +1,12 @@
+npx skillfish add ui-components
+npx skillfish add ui-designer
+npx skillfish add ui-audit
+npx skillfish add ui-guideline-creator
+
+
+설치된 스킬 확인
+npx skillfish list
+
+
+스킬 설치 후 AI에게 명령
+Create a public service website UI

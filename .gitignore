@@ -1,0 +1,4 @@
+*.log
+.site-config.applied.json
+qa-screens/
+qa-*-lighthouse.json

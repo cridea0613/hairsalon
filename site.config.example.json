@@ -1,0 +1,9 @@
+{
+  "brandName": "Salon Public",
+  "domain": "https://salon-public.example",
+  "supportEmail": "example@domain.com",
+  "supportPhone": "010-0000-0000",
+  "supportPhoneHref": "+821000000000",
+  "supportHours": "Monday to Friday, 10:00 AM to 6:00 PM KST",
+  "supportCoverage": "Salon marketplace and public website builds in Korea and remote projects."
+}

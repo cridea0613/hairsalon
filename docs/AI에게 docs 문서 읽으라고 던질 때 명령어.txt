@@ -1,0 +1,166 @@
+## AI에게 작업 시킬 때 항상 먼저 이걸 말하는 게 좋습니다.
+Use the documentation as the single source of truth.
+Do not override project rules.
+
+=================================================
+
+## FTP 환경일 때
+Read the project documentation in this order:
+
+00.PRD.md
+01.PROJECT_BRIEF_FTP.md
+02.PROJECT_CONTEXT.md
+03.DESIGN_SYSTEM.md
+04.SEO_RULES.md
+05.COMPONENT_LIBRARY.md
+07.AI_EXECUTION_RULES.md
+10.REPOSITORY_RULES.md
+08.PAGE_TEMPLATES.md
+
+Use these documents as the source of truth.
+
+Important environment constraints:
+
+- This project is deployed via FTP to a traditional hosting server.
+- Public-facing pages must be built using HTML, CSS, and minimal Vanilla JavaScript.
+- PHP includes may be used for shared components such as header and footer.
+- Do NOT convert the public website into a framework-based SPA.
+
+Architecture rules:
+
+Public website layer:
+- HTML
+- CSS
+- minimal JavaScript
+- SEO optimized
+- fast loading
+
+Application layer (separate system):
+- login
+- signup
+- admin dashboard
+- user account features
+- may use Next.js or other frameworks
+- must not break the public website structure
+
+When generating new pages:
+
+1. Select the correct template from PAGE_TEMPLATES.md
+2. Reuse components from COMPONENT_LIBRARY.md
+3. Follow DESIGN_SYSTEM.md
+4. Respect SEO_RULES.md
+5. Keep JavaScript minimal
+
+Always prioritize:
+
+- SEO
+- semantic HTML
+- fast loading
+- maintainable code
+
+Then execute the requested task.
+
+===============================================
+
+## Cloudflare 환경일 때
+Read the project documentation in this order:
+
+00.PRD.md
+01.PROJECT_BRIEF_CLOUDFLARE.md
+02.PROJECT_CONTEXT.md
+03.DESIGN_SYSTEM.md
+04.SEO_RULES.md
+05.COMPONENT_LIBRARY.md
+07.AI_EXECUTION_RULES.md
+10.REPOSITORY_RULES.md
+08.PAGE_TEMPLATES.md
+
+Use these documents as the source of truth.
+
+Important environment constraints:
+
+- The public website is deployed on Cloudflare Pages.
+- Public pages must remain static and SEO-friendly.
+- Avoid server-side frameworks for public content.
+
+Architecture rules:
+
+Public website layer:
+- static HTML
+- CSS
+- minimal JavaScript
+- optimized for CDN delivery
+
+Protected application layer:
+- login
+- signup
+- dashboard
+- admin tools
+
+These may be implemented using:
+
+- Cloudflare Workers
+- Hono APIs
+- external backend services
+- or a separately hosted Next.js application
+
+Do NOT assume that full server-side Next.js features are available within Cloudflare Pages without the proper runtime configuration.
+
+When generating pages:
+
+1. Choose the appropriate template from PAGE_TEMPLATES.md
+2. Reuse UI from COMPONENT_LIBRARY.md
+3. Follow DESIGN_SYSTEM.md
+4. Respect SEO_RULES.md
+5. Optimize for static delivery and CDN performance
+
+Priorities:
+
+- SEO-first structure
+- semantic HTML
+- minimal JavaScript
+- high performance
+
+Then execute the requested task.
+
+===================================================
+
+## 실제 작업 시작용 프롬프트
+**FTP
+
+Follow the FTP deployment environment.
+
+Read documentation:
+
+00.PRD.md
+01.PROJECT_BRIEF_FTP.md
+02.PROJECT_CONTEXT.md
+03.DESIGN_SYSTEM.md
+04.SEO_RULES.md
+05.COMPONENT_LIBRARY.md
+07.AI_EXECUTION_RULES.md
+10.REPOSITORY_RULES.md
+08.PAGE_TEMPLATES.md
+
+Now create the requested page.
+
+
+--------------------------------------------
+
+**Cloudflare
+
+Follow the Cloudflare deployment environment.
+
+Read documentation:
+
+00.PRD.md
+01.PROJECT_BRIEF_CLOUDFLARE.md
+02.PROJECT_CONTEXT.md
+03.DESIGN_SYSTEM.md
+04.SEO_RULES.md
+05.COMPONENT_LIBRARY.md
+07.AI_EXECUTION_RULES.md
+10.REPOSITORY_RULES.md
+08.PAGE_TEMPLATES.md
+
+Now create the requested page.
